@@ -1,0 +1,1463 @@
+/*esto es comentario en css*/
+* { 
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+    
+
+
+
+/****************** @MEDIA SMARTPHONE*****************/
+@media (max-width: 480px) {
+
+/*tipografias codigo*/
+@font-face {
+    font-family:"hurricane";
+    src: url("hurricane/Hurricane-Regular.ttf");
+}
+
+
+/*tipografias activada*/
+body {   
+    font-family: "hurricane"; 
+    color: white;     
+}
+
+nav {
+    
+    border-color: red;
+     border-style: groove;
+     text-align:center;
+     background-color: black;
+    }
+
+h1 {color: white}
+h2 {color: white}
+h5 {text-align: center; font-size: 600%; color:red}
+p {color: white;}
+span {color: orangered;}
+
+footer {
+    grid-area: pie; 
+    border-style: groove;
+    border-color: red;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+span {
+    color: white; 
+    background-color: black;
+    font-size: 160%;
+    margin-left: 20px;
+    border-left: solid 0.5px red;
+    }
+
+a {
+    color: white
+}
+
+/*--- SECTOR HOME ---*/
+.contenedorImagen{
+    background-image: url(./img/novia1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+}
+
+
+/* #colortexto li{
+    display: inline-block;
+} */
+
+/*codigo id creado especifico*/
+#bordes {border-style: double; }
+#fondo {background-color: beige;}
+#color-texto {color:white }
+#tamaño {font-size: 120%;}
+#color-bordes {border-color: brown;}
+#alineado {text-align: center center;}
+
+/*Estilos de listas*/
+ul {list-style-type: circle;}
+
+/*Estilos de textos*/
+.cursiva {font-style: italic;}
+.normal {font-style: normal;}
+.negrita {font-weight: bold;}
+.nonegrita {font-weight: normal;}
+
+/*Tamaños de texto*/
+.texto-grande {font-size: 120%;}
+
+/*centrado y laterales*/
+.centrado {text-align: center;}
+.centrado2 {background: center;}
+
+/*espacio entre lineas*/
+.interlineado {line-height: 1.5;}
+
+/*sinsubrayar - color fondo - bordes tipo y color */
+.pieDePagina span a {
+    text-decoration: none; 
+    background-color: black;
+    
+}
+
+/*color total de pagina*/
+.total {background-color: black;}
+
+/*borde color y tipo*/
+.bordes {
+    border-color: red;
+    border-style: groove;
+}
+
+/*  grid / flex */
+
+#grid-area {
+display: grid;
+grid-template-areas: 
+"cabeza"
+"menu"
+"presentacion"
+"conmtenido"
+"conmtenido"
+"conmtenido"
+"conmtenido"
+"pie";
+grid-template-columns: 1fr 1fr 2fr 2fr 1fr 3fr 1fr 1fr;
+grid-column-gap:5px ;
+grid-row-gap: 5px ;
+}
+
+header {grid-area: cabeza ;
+}
+
+.navMenu {
+    display: flex;
+    grid-area: menu;
+    font-size: 50%;
+    text-align: left; 
+
+
+}
+/* ******************SECTOR GALERIA.HTML***************** */
+
+
+.sectionGaleria { 
+    display: flex;    
+    justify-content:center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin: 5px;       
+}
+
+.tituloGaleria { 
+    display: flex;
+    text-align: center;
+    background-color: black;
+    grid-template-rows: none;
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: solid;
+    color: gray;
+    -webkit-text-fill-color: white ;
+    -webkit-text-stroke: 2px;
+     
+}
+
+.contenedorTitulo {
+    grid-area: titulo ;
+    grid-template-rows: 1fr;
+    background-color: red;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+
+    
+}
+
+.contenedorLogo {
+    grid-area: cabeza;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;; height:100%  
+
+}
+
+.contenedorQuince {
+
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "fotoUno"
+     "fotoDos"
+     "fotoTres"
+     "fotoCuatro"
+     "fotoCinco"
+     "fotoSeis"
+     "fotoSiete"
+     "fotoOcho" 
+     "fotoNueve"
+     "fotoDiez" 
+     "fotoOnce"
+     "fotoDoce";
+    display: flex 10px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-top: 0px; 
+    padding-left: 20px;
+
+ }
+ 
+ .fotoUno {
+     grid-area: fotoUno; 
+     width: 200px; height: 300px;
+     border-color: black;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+     transition: transform 0.3s ease-in-out;
+         
+ }
+
+ .fotoDos {
+     grid-area: fotoDos ;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+     
+ }
+
+ .fotoTres  {
+     grid-area: fotoTres;
+     width: 200px; height: 300px;
+     border-radius: 20px; 
+     box-shadow: 10px 5px black;/* SOMBRA*/
+     border-style: solid; /* BORDE IMG*/
+     border-color: white;
+    }
+
+ .fotoCuatro {
+     grid-area: fotoCuatro;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoCinco {
+     grid-area: fotoCinco;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+
+ }
+
+ .fotoSeis {
+     grid-area: fotoSeis;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoSiete {
+     grid-area: fotoSiete;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoOcho {
+     grid-area: fotoOcho;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+ .fotoNueve {
+     grid-area: fotoNueve;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ } 
+
+ .fotoDiez {
+    grid-area: fotoDiez;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoOnce {
+    grid-area: fotoOnce;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoDoce {
+    grid-area: fotoDoce;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+ .contenedorNovias {
+
+    display: grid;
+    grid-template-columns: 100% ; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "fotoA"
+    "fotoB" 
+    "fotoC"
+    "fotoD"
+    "fotoE"
+     "fotoF" 
+     "fotoG" 
+     "fotoH"
+    "fotoI"
+     "fotoJ" 
+     "fotoK" 
+     "fotoL";
+    display:flex 10px ;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 0;  
+ }
+
+ .fotoA {
+    grid-area: fotoA;
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white; 
+}
+
+.fotoB {
+    grid-area: fotoB ;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoC  {
+    grid-area: fotoC;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white; 
+   }
+
+.fotoD {
+    grid-area: fotoD;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoE {
+    grid-area: fotoE;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.fotoF {
+    grid-area: fotoF;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoG {
+    grid-area: fotoG;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoH {
+    grid-area: fotoH;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoI {
+    grid-area: fotoI;
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;   
+}
+
+.fotoJ {
+    grid-area: fotoJ;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoK {
+    grid-area: fotoK;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoL {
+    grid-area: fotoL;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoM {
+    grid-area: fotoM; 
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;  
+} 
+
+
+/* todo grid/ flex */
+/* ****************** FIN SECTOR GALERIA***************** */
+
+}
+ 
+/****************** @MEDIA TABLET**************************/
+@media (min-width: 481px) and (max-width: 1023px){
+
+/*tipografias codigo*/
+@font-face {
+    font-family:"hurricane";
+    src: url("hurricane/Hurricane-Regular.ttf");
+}
+
+
+/*tipografias activada*/
+body {   
+    font-family: "hurricane"; 
+    color: white;     
+}
+
+nav {border-color: red;
+     border-style: groove;
+     text-align: right;
+     background-color: black;
+    }
+
+h1 {color: white}
+h2 {color: white}
+h5 {text-align: center; font-size: 600%; color:red}
+p {color: white;}
+
+
+footer { 
+    border-style: groove;
+    border-color: red;
+    font-size: 15px;   
+}
+
+span {
+    background-color: black;
+    font-size: 160%;
+    margin-left: 20px;
+    border-left: solid 0.5px red;
+    }
+
+a {
+    color: white
+}
+
+/*--- SECTOR HOME ---*/
+.contenedorImagen{
+    background-image: url(./img/novia1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+}
+
+
+
+/*codigo id creado especifico*/
+#bordes {border-style: double; }
+#fondo {background-color: beige;}
+#color-texto {color:white }
+#tamaño {font-size: 120%;}
+#color-bordes {border-color: brown;}
+#alineado {text-align: center center;}
+
+/*Estilos de listas*/
+ul {list-style-type: circle;}
+
+/*Estilos de textos*/
+.cursiva {font-style: italic;}
+.normal {font-style: normal;}
+.negrita {font-weight: bold;}
+.nonegrita {font-weight: normal;}
+
+/*Tamaños de texto*/
+.texto-grande {font-size: 120%;}
+
+/*centrado y laterales*/
+.centrado {text-align: center;}
+.centrado2 {background: center;}
+
+/*espacio entre lineas*/
+.interlineado {line-height: 1.5;}
+
+/*sinsubrayar - color fondo - bordes tipo y color */
+.pieDePagina span a {
+    text-decoration: none; 
+    background-color: black;
+    
+}
+
+/*color total de pagina*/
+.total {background-color: black;}
+
+/*borde color y tipo*/
+.bordes {
+    border-color: red;
+    border-style: groove;
+}
+
+/*  grid / flex */
+
+#grid-area {
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "presentacion presentacion"
+    "conmtenido contenido"
+    "conmtenido contenido"
+    "conmtenido contenido"
+    "conmtenido contenido"
+    "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr 3fr 1fr 1fr ;
+    grid-column-gap:5px ;
+    grid-row-gap: 5px ;
+    }
+/* ******************SECTOR GALERIA.HTML***************** */
+
+
+.sectionGaleria { 
+    display: flex;    
+    justify-content:center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin: 5px;       
+}
+
+.tituloGaleria { 
+    display: flex;
+    text-align: center;
+    background-color: black;
+    grid-template-rows: none;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: solid;
+    color: gray;
+    -webkit-text-fill-color: white ;
+    -webkit-text-stroke: 2px;
+     
+}
+
+.contenedorTitulo {
+    grid-area:auto ;
+    grid-template-rows: 1fr;
+    background-color: red;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+}
+.logo {
+    width: 150px;
+    
+}
+.contenedorLogo {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: nowrap; 
+    align-content: center;
+
+}
+
+.contenedorQuince {
+
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "fotoUno fotoDos"
+    "fotoTres fotoCuatro"
+    "fotoCinco fotoSeis" 
+    "fotoSiete fotoOcho" 
+    "fotoNueve fotoDiez" 
+    "fotoOnce fotoDoce";
+    display: flex 10px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px; 
+    transition: transform 0.3s ease-in-out;
+
+ }
+ 
+ .fotoUno {
+     grid-area: fotoUno; 
+     width: 200px; height: 300px;
+     border-color: black;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+     transition: transform 0.3s ease-in-out;
+         
+ }
+
+ .fotoDos {
+     grid-area: fotoDos ;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+     
+ }
+
+ .fotoTres  {
+     grid-area: fotoTres;
+     width: 200px; height: 300px;
+     border-radius: 20px; 
+     box-shadow: 10px 5px black;/* SOMBRA*/
+     border-style: solid; /* BORDE IMG*/
+     border-color: white;
+    }
+
+ .fotoCuatro {
+     grid-area: fotoCuatro;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoCinco {
+     grid-area: fotoCinco;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+
+ }
+
+ .fotoSeis {
+     grid-area: fotoSeis;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoSiete {
+     grid-area: fotoSiete;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoOcho {
+     grid-area: fotoOcho;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+ .fotoNueve {
+     grid-area: fotoNueve;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ } 
+
+ .fotoDiez {
+    grid-area: fotoDiez;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoOnce {
+    grid-area: fotoOnce;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoDoce {
+    grid-area: fotoDoce;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+ .contenedorNovias {
+
+    display: grid;
+    grid-template-columns: 50% 50% ; 
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "fotoA fotoB" 
+    "fotoC fotoD"
+    "fotoE fotoF" 
+    "fotoG fotoH"
+    "fotoI fotoJ" 
+    "fotoK fotoL";
+    display:flex 10px ;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;  
+ }
+
+ .fotoA {
+    grid-area: fotoA;
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white; 
+}
+
+.fotoB {
+    grid-area: fotoB ;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoC  {
+    grid-area: fotoC;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white; 
+   }
+
+.fotoD {
+    grid-area: fotoD;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoE {
+    grid-area: fotoE;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.fotoF {
+    grid-area: fotoF;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoG {
+    grid-area: fotoG;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoH {
+    grid-area: fotoH;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoI {
+    grid-area: fotoI;
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;   
+}
+
+.fotoJ {
+    grid-area: fotoJ;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoK {
+    grid-area: fotoK;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoL {
+    grid-area: fotoL;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoM {
+    grid-area: fotoM; 
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;  
+} 
+
+/* todo grid/ flex */
+/* ****************** FIN SECTOR GALERIA***************** */
+ 
+}
+
+
+
+/****************** @MEDIA DESkTOP**************************/
+@media (min-width: 1024px) {
+
+/*tipografias codigo*/
+@font-face {
+    font-family:"hurricane";
+    src: url("hurricane/Hurricane-Regular.ttf");
+}
+
+
+/*tipografias activada*/
+body {   
+    font-family: "hurricane"; 
+    color: white;     
+}
+
+nav {border-color: red;
+     border-style: groove;
+     text-align: right;
+     background-color: black;
+    }
+
+h1 {color: white}
+h2 {color: white}
+h5 {text-align: center; font-size: 600%; color:red}
+p {color: white;}
+
+
+footer { 
+    border-style: groove;
+    border-color: red;
+    font-size: 20px;   
+}
+
+span {
+    background-color: black;
+    font-size: 160%;
+    margin-left: 20px;
+    border-left: solid 0.5px red;
+    }
+
+a {
+    color: white
+}
+
+/*********************** SECTOR HOME **********************/
+.contenedorImagen{
+    background-image: url(./img/novia1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+    font-size: 170%;
+    
+}
+.contenedorPresent {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    align-content: flex-end;
+    padding-right: 20px;
+}
+
+.contenedorMain1 {
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "fotoPortadaUno fotoPortadaDos " ;
+    display: flex 10px;
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.navHome {
+    display: flex;
+    font-size: 100%;
+    justify-content: space-around;
+
+}
+
+.tituloGaleriaHome {
+    
+    display: flex; 
+   text-align:justify;
+   font-size: 60px;
+   justify-content: space-around;
+   
+
+}
+
+#grid-area {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: 
+    "cabeza cabeza cabeza cabeza"
+    "menu menu menu menu"
+    "presentacion"
+    "conmtenido contenido"
+    "conmtenido contenido"
+    "conmtenido contenido"
+    "conmtenido contenido"
+    "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap:5px ;
+    grid-row-gap: 5px ;
+    
+}
+
+.sectionGaleriaHome { 
+    display: flex;    
+    justify-content:center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin: 5px;       
+}
+
+.fotoPortadaDos {
+    display: flex;
+    grid-area: fotoUno; 
+    width: 300px; height: 400px;
+    border-color: black;
+    border-radius: 20px;
+    box-shadow: 10px 5px red;
+    border-style: solid;
+    border-color: white;
+    transition: transform 0.3s ease-in-out;
+           
+}
+
+.fotoPortadaTres {
+    
+    display: flex;
+    grid-area: fotoUno; 
+    width: 300px; height: 400px;
+    border-color: black;
+    border-radius: 20px;
+    box-shadow: 10px 5px red;
+    border-style: solid;
+    border-color: white;
+    transition: transform 0.3s ease-in-out;        
+}
+
+
+/*codigo id creado especifico*/
+#bordes {border-style: double; }
+#fondo {background-color: beige;}
+#color-texto {color:white }
+#tamaño {font-size: 120%;}
+#color-bordes {border-color: brown;}
+#alineado {text-align: center center;}
+
+/*Estilos de listas*/
+ul {list-style-type: circle;}
+
+/*Estilos de textos*/
+.cursiva {font-style: italic;}
+.normal {font-style: normal;}
+.negrita {font-weight: bold;}
+.nonegrita {font-weight: normal;}
+
+/*Tamaños de texto*/
+.texto-grande {font-size: 120%;}
+
+/*centrado y laterales*/
+.centrado {text-align: center;}
+.centrado2 {background: center;}
+
+/*espacio entre lineas*/
+.interlineado {line-height: 1.5;}
+
+/*sinsubrayar - color fondo - bordes tipo y color */
+.pieDePagina span a {
+    text-decoration: none; 
+    background-color: black;
+    
+}
+
+/*color total de pagina*/
+.total {background-color: black;}
+
+/*borde color y tipo*/
+.bordes {
+    border-color: red;
+    border-style: groove;
+}
+
+/*  grid / flex */
+
+
+
+/* ******************SECTOR GALERIA.HTML***************** */
+
+
+.sectionGaleria { 
+    display: flex;    
+    justify-content:center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin: 5px;       
+}
+
+.tituloGaleria { 
+    display: flex;
+    text-align: center;
+    background-color: black;
+    grid-template-rows: none;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: solid;
+    color: gray;
+    -webkit-text-fill-color: white ;
+    -webkit-text-stroke: 2px;
+     
+}
+
+.contenedorTitulo {
+    grid-area:auto ;
+    grid-template-rows: 1fr;
+    background-color: red;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+}
+.logo {
+    width: 300px;
+    
+}
+.contenedorLogo {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: nowrap; 
+    align-content: center;
+
+}
+
+.contenedorQuince {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "fotoUno fotoDos fotoTres fotoCuatro  "
+    "fotoCinco fotoSeis fotoSiete fotoOcho" 
+    "fotoNueve fotoDiez fotoOnce fotoDoce";
+    display: flex 10px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px; 
+    transition: transform 0.3s ease-in-out;
+
+ }
+ 
+ .fotoUno {
+     grid-area: fotoUno; 
+     width: 200px; height: 300px;
+     border-color: black;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+     transition: transform 0.3s ease-in-out;
+         
+ }
+
+ .fotoDos {
+     grid-area: fotoDos ;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+     
+ }
+
+ .fotoTres  {
+     grid-area: fotoTres;
+     width: 200px; height: 300px;
+     border-radius: 20px; 
+     box-shadow: 10px 5px black;/* SOMBRA*/
+     border-style: solid; /* BORDE IMG*/
+     border-color: white;
+    }
+
+ .fotoCuatro {
+     grid-area: fotoCuatro;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoCinco {
+     grid-area: fotoCinco;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+
+ }
+
+ .fotoSeis {
+     grid-area: fotoSeis;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoSiete {
+     grid-area: fotoSiete;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .fotoOcho {
+     grid-area: fotoOcho;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ }
+ .fotoNueve {
+     grid-area: fotoNueve;
+     width: 200px; height: 300px;
+     border-radius: 20px;
+     box-shadow: 10px 5px black;
+     border-style: solid;
+     border-color: white;
+ } 
+
+ .fotoDiez {
+    grid-area: fotoDiez;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoOnce {
+    grid-area: fotoOnce;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoDoce {
+    grid-area: fotoDoce;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+ .contenedorNovias {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "fotoA fotoB fotoC fotoD"
+    "fotoE fotoF fotoG fotoH"
+    "fotoI fotoJ fotoK fotoL";
+    display:flex 10px ;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;  
+ }
+
+ .fotoA {
+    grid-area: fotoA;
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white; 
+}
+
+.fotoB {
+    grid-area: fotoB ;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoC  {
+    grid-area: fotoC;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white; 
+   }
+
+.fotoD {
+    grid-area: fotoD;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoE {
+    grid-area: fotoE;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.fotoF {
+    grid-area: fotoF;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoG {
+    grid-area: fotoG;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoH {
+    grid-area: fotoH;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoI {
+    grid-area: fotoI;
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;   
+}
+
+.fotoJ {
+    grid-area: fotoJ;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoK {
+    grid-area: fotoK;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+
+.fotoL {
+    grid-area: fotoL;
+    width: 200px; height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;
+}
+.fotoM {
+    grid-area: fotoM; 
+    width: 200px; height: 300px;
+    border-radius: 20px; 
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    border-color: white;  
+} 
+
+
+/* todo grid/ flex */
+/* ****************** FIN SECTOR GALERIA***************** */
+    
+}
