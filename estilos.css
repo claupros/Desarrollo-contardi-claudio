@@ -484,6 +484,47 @@ header {grid-area: cabeza ;
 /* todo grid/ flex */
 /* ****************** FIN SECTOR GALERIA***************** */
 
+/********************SECTOR NOSOTROS******************/
+.contenedorImagenNosotros{
+    background-image: url(img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 70rem;
+    font-size: 170%;   
+}
+
+.contenedorPresentNosotros {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    align-content: flex-end;
+    padding-right: 20px;
+}
+.contenedorNosotros{
+    
+flex-wrap: nowrap;
+text-overflow:ellipsis;
+position: absolute;
+left: 30%;
+top: 50%;
+text-align: center;
+
+
+}
+
+.dispNos {
+font-size: 130%;
+font: arial;   
+}
+
+.tituloNosotros {
+text-shadow: 10px 10px 5px gray;
+}
+
+/*********************FIN SECTOR NOSOTROS***************************/
+
+
 }
  
 /****************** @MEDIA TABLET**************************/
@@ -929,6 +970,49 @@ ul {list-style-type: circle;}
 /* todo grid/ flex */
 /* ****************** FIN SECTOR GALERIA***************** */
  
+/********************SECTOR NOSOTROS******************/
+
+
+.contenedorImagenNosotros{
+    background-image: url(img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 70rem;
+    font-size: 170%;   
+}
+
+.contenedorPresentNosotros {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    align-content: flex-end;
+    padding-right: 20px;
+}
+.contenedorNosotros{
+    
+flex-wrap: nowrap;
+text-overflow:ellipsis;
+position: absolute;
+left: 30%;
+top: 50%;
+text-align: center;
+
+
+}
+
+.dispNos {
+font-size: 130%;
+font: arial;   
+}
+
+.tituloNosotros {
+text-shadow: 10px 10px 5px gray;
+}
+
+/*********************FIN SECTOR NOSOTROS***************************/
+
+
 }
 
 
@@ -961,11 +1045,11 @@ h5 {text-align: center; font-size: 600%; color:red}
 p {color: white;}
 
 
-footer { 
+/*footer { 
     border-style: groove;
     border-color: red;
     font-size: 20px;   
-}
+}*/
 
 span {
     background-color: black;
@@ -1460,10 +1544,152 @@ ul {list-style-type: circle;}
 /* todo grid/ flex */
 /* ****************** FIN SECTOR GALERIA***************** */
 
+/********************SECTOR NOSOTROS******************/
+
+.gradienteLogo 
+{
+background-color: #000000;
+background-image: linear-gradient(27deg, #000000 0%, #1d1b1b 50%, #FF0000 100%);
+      
+}
+
+.contenedorImagenNosotros
+{
+    background-image: url(img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 70rem;
+    font-size: 170%;   
+}
+
+.contenedorPresentNosotros 
+{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    align-content: flex-end;
+    padding-right: 20px;
+}
+.contenedorNosotros
+{   
+flex-wrap: nowrap;
+text-overflow:ellipsis;
+position: absolute;
+left: 30%;
+top: 50%;
+text-align: center;
+padding-right: 5%;
+}
+
+.dispNos 
+{
+font-size: 130%;
+font: arial;   
+}
+
+.tituloNosotros 
+{
+text-shadow: 10px 10px 5px red;
+text-align: justify;
+
+}
+
+.navColorTexto{
+    color: white;
+    background-color: #000000;
+    background-image: linear-gradient(88deg, #000000 0%, #1d1b1b 50%, #FF0000 100%);
+}
+
+/*****FOOTER****/
+
+.footer-basic {
+    padding:40px 0;
+    background-color: #000000;
+    background-image: linear-gradient(88deg, #000000 0%, #1d1b1b 50%, #FF0000 100%);
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+  .buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
 
 
-
-/*********************SECTOR NOSOTROS***************************/
+/*********************FIN SECTOR NOSOTROS***************************/
 
 
 
