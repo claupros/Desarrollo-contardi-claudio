@@ -30,6 +30,7 @@ nav {
      border-style: groove;
      text-align:center;
      background-color: black;
+
     }
 
 h1 {color: white}
@@ -1562,7 +1563,7 @@ a {
     background-size: cover;
     width: 100%;
     height: 35rem;
-    font-size: 170%;
+    font-size: 2rem;
     
 }
 .contenedorPresent {
@@ -2265,5 +2266,20 @@ cursor: pointer;
      form { width: 100%;}
 
  }
+
+
+/********MEDIA QUERIES**********/
+
+@media (max-width: 877px) {
+  
+    
+
+}
+
+
+
+
+
+
 
 }
