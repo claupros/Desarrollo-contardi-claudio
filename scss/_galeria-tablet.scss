@@ -46,12 +46,13 @@
 
   .contenedorQuince {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto ;
     grid-template-areas:
-      "fotoUno fotoDos fotoTres fotoCuatro  "
-      "fotoCinco fotoSeis fotoSiete fotoOcho"
-      "fotoNueve fotoDiez fotoOnce fotoDoce";
+      "fotoUno fotoDos fotoTres"
+      "fotoCuatro fotoCinco fotoSeis"
+      "fotoSiete fotoOcho fotoNueve"
+      "fotoDiez fotoOnce fotoDoce";
     display: flex 10px;
     width: 100%;
     height: 100%;
@@ -64,12 +65,13 @@
 
   .contenedorNovias {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
-      "fotoA fotoB fotoC fotoD"
-      "fotoE fotoF fotoG fotoH"
-      "fotoI fotoJ fotoK fotoL";
+      "fotoA fotoB fotoC" 
+      "fotoD fotoE fotoF"
+      "fotoG fotoH fotoI"
+      "fotoJ fotoK fotoL";
     display: flex 10px;
     width: 100%;
     height: 100%;
