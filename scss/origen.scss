@@ -5,6 +5,199 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+/***************************** @MEDIA SMARTPHONE**********************/
+@media (min-width: 481px) {
+  form {
+    width: 100%;
+  }
+  
+
+@font-face {
+  font-family: "hurricane";
+  src: url("hurricane/Hurricane-Regular.ttf");
+  font-display: swap;
+        font-style: normal;
+        font-weight: 100;
+}
+
+body {
+  font-family: "hurricane";
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h5 {
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+}
+
+/******************************SECTOR LOGO*****************************/
+@import "logo-general";
+     
+/*****************************SECTOR NAV*******************************/
+@import "nav-general";
+  
+/***************************FIN SECTOR NAV*****************************/
+   
+/************************** SECTOR HOME *******************************/
+@import "home-smartphone";
+
+/**************************FIN SECTOR HOME*****************************/
+      
+/* ************************SECTOR GALERIA HTML*************************/
+  @import "galeria-smartphone";
+   
+  @mixin fotosquinceaños ($redondo:20px) {
+
+    width: 200px;
+    height: 300px;
+    border-color:white;
+    border-radius: $redondo;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+    transform: scale(2);
+  }
+}
+  
+  .fotoUno {
+   @include fotosquinceaños (50px);
+
+  }
+  
+  .fotoDos {
+    @include fotosquinceaños;
+
+  }
+  
+  .fotoTres {
+    @include fotosquinceaños;
+  }
+  
+  .fotoCuatro {
+    @include fotosquinceaños;
+  }
+  
+  .fotoCinco {
+    @include fotosquinceaños;
+  }
+  
+  .fotoSeis {
+    @include fotosquinceaños;
+  }
+  
+  .fotoSiete {
+    @include fotosquinceaños;
+  }
+  
+  .fotoOcho {
+    @include fotosquinceaños;
+  }
+  
+  .fotoNueve {
+    @include fotosquinceaños;
+  }
+  
+  .fotoDiez {
+    @include fotosquinceaños;
+  }
+  
+  .fotoOnce {
+    @include fotosquinceaños;
+  }
+  
+  .fotoDoce {
+    @include fotosquinceaños;
+  }
+  
+  @mixin fotosnovias {
+    
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(2);
+    }
+  }
+  .fotoA {
+    @include fotosnovias;
+  }
+  
+  .fotoB {
+    @include fotosnovias;
+  }
+  
+  .fotoC {
+    @include fotosnovias;
+  }
+  
+  .fotoD {
+    @include fotosnovias;
+  }
+  
+  .fotoE {
+    @include fotosnovias;
+  }
+  
+  .fotoF {
+    @include fotosnovias;
+  }
+  
+  .fotoG {
+    @include fotosnovias;
+  }
+  
+  .fotoH {
+    @include fotosnovias;
+  }
+  
+  .fotoI {
+    @include fotosnovias;
+  }
+  
+  .fotoJ {
+    @include fotosnovias;
+  }
+  
+  .fotoK {
+    @include fotosnovias;
+  }
+  
+  .fotoL {
+    @include fotosnovias;
+  }
+  
+  .fotoM {
+    @include fotosnovias;
+  }
+   
+/********************* FIN SECTOR GALERIA******************************/
+  
+/***********************SECTOR NOSOTROS********************************/  
+@import "nosotros-smartphone"; 
+
+/***********************FIN SECTOR NOSOTROS*****************************/
+      
+/***************************SECTOR CONTACTO*****************************/
+  @import "contacto-smartphone";
+
+/***************************FIN SECTOR CONTACTO*************************/
+
+/******************************SECTOR FOOTER****************************/  
+@import "footer-smartphone";
+
+/******************************FIN SECTOR FOOTER************************/
+   
+}
   /************************** @MEDIA TABLET**************************/
     @media (min-width: 481px) and (max-width: 1023px) {
       @font-face {
@@ -56,7 +249,7 @@
     &:hover {
     transform: scale(2);
   }
-  }
+}
   
   .fotoUno {
    @include fotosquinceaños (50px);
@@ -190,17 +383,7 @@
 
 /******************************FIN SECTOR FOOTER************************/
 
-    @media (max-width: 480px) {
-      form {
-        width: 100%;
-      }
-    }
-  
-   
-  }
-
-
- 
+}   
   /************************** @MEDIA DESkTOP**************************/
 
   @media (min-width: 1024px) {
@@ -239,7 +422,7 @@
 
 /**************************FIN SECTOR HOME*****************************/
       
-/* ************************SECTOR GALERIA.HTML*************************/
+/*************************SECTOR GALERIA.HTML*************************/
   @import "galeria-desktop";
    
   @mixin fotosquinceaños ($redondo:20px) {
@@ -387,14 +570,5 @@
 @import "footer-general";
 
 /******************************FIN SECTOR FOOTER************************/
+ }
 
-    @media (max-width: 480px) {
-      form {
-        width: 100%;
-      }
-    }
-  
-    @media (max-width: 877px) {
-    }
-  }
-  

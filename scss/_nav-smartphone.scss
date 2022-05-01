@@ -1,0 +1,22 @@
+nav li{
+    display:inline-block;
+    width:45%;
+    padding:5px 10px;
+    background-color:#000;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    font: arial;
+    font-size: 75%;
+    }
+  
+    .navColorTexto {
+      color: white;
+      background-color: #000000;
+      background-image: linear-gradient(
+        88deg,
+        #000000 0%,
+        #1d1b1b 50%,
+        #ff0000 100%
+      );
+    }

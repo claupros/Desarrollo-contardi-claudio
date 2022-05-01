@@ -1,0 +1,78 @@
+.sectionGaleria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin: 5px;
+  }
+
+  .tituloGaleria {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    grid-template-rows: none;
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: solid;
+    color: gray;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px;
+    justify-content: center; 
+  }
+
+  .contenedorTitulo {
+    grid-area: auto;
+    grid-template-rows: 1fr;
+    background-color: red;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+
+  .contenedorQuince {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "fotoUno fotoDos" 
+    "fotoTres fotoCuatro" 
+    "fotoCinco fotoSeis" 
+    "fotoSiete fotoOcho" 
+    "fotoNueve fotoDiez" 
+    "fotoOnce fotoDoce";
+    display: flex 10px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .contenedorNovias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto ;
+    grid-template-areas:
+      "fotoA fotoB"
+      "fotoC fotoD"
+      "fotoE fotoF"
+      "fotoG fotoH"
+      "fotoI fotoJ"
+      "fotoK fotoL";
+    display: flex 10px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }

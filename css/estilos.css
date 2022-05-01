@@ -6,6 +6,694 @@
   box-sizing: border-box;
 }
 
+/***************************** @MEDIA SMARTPHONE**********************/
+@media (min-width: 481px) {
+  form {
+    width: 100%;
+  }
+
+  @font-face {
+    font-family: "hurricane";
+    src: url("hurricane/Hurricane-Regular.ttf");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 100;
+  }
+  body {
+    font-family: "hurricane";
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+
+  h1, h5 {
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+  }
+
+  /******************************SECTOR LOGO*****************************/
+  .gradienteLogo {
+    background-color: #000000;
+    background-image: linear-gradient(27deg, #000000 0%, #1d1b1b 50%, #ff0000 100%);
+  }
+
+  /*****************************SECTOR NAV*******************************/
+  nav li {
+    display: inline-block;
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+    font: arial;
+  }
+
+  .navColorTexto {
+    color: white;
+    background-color: #000000;
+    background-image: linear-gradient(88deg, #000000 0%, #1d1b1b 50%, #ff0000 100%);
+  }
+
+  /***************************FIN SECTOR NAV*****************************/
+  /************************** SECTOR HOME *******************************/
+  .parrafo {
+    text-align: center;
+    font-size: 200%;
+    color: red;
+  }
+
+  .contenedorImagen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+    font-size: 2rem;
+  }
+
+  .contenedorPresent {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-content: flex-end;
+    padding-right: 20px;
+  }
+
+  /*.contenedorPresent {  esta seccion se uso en tablet probar
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    align-content: flex;
+    padding-left: 20px;
+  }*/
+  .contenedorMain1 {
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fotoPortadaUno" "fotoPortadaDos";
+    display: flex 10px;
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .tamañoTitulo {
+    font-size: 40px;
+  }
+
+  .tituloGaleriaHome {
+    display: flex;
+    text-align: justify;
+    font-size: 60px;
+    justify-content: space-around;
+  }
+
+  .buttonHome {
+    justify-content: center;
+  }
+
+  #grid-area {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "presentacion presentacion" "conmtenido contenido" "conmtenido contenido" "conmtenido contenido" "conmtenido contenido" "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .sectionGaleriaHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin: 5px;
+  }
+
+  /**************************FIN SECTOR HOME*****************************/
+  /* ************************SECTOR GALERIA HTML*************************/
+  .sectionGaleria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-radius: 4px;
+    margin: 5px;
+  }
+
+  .tituloGaleria {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    grid-template-rows: none;
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: solid;
+    color: gray;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px;
+    justify-content: center;
+  }
+
+  .contenedorTitulo {
+    grid-area: auto;
+    grid-template-rows: 1fr;
+    background-color: red;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .contenedorQuince {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "fotoUno fotoDos" "fotoTres fotoCuatro" "fotoCinco fotoSeis" "fotoSiete fotoOcho" "fotoNueve fotoDiez" "fotoOnce fotoDoce";
+    display: flex 10px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .contenedorNovias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "fotoA fotoB" "fotoC fotoD" "fotoE fotoF" "fotoG fotoH" "fotoI fotoJ" "fotoK fotoL";
+    display: flex 10px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .fotoUno {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoUno:hover {
+    transform: scale(2);
+  }
+
+  .fotoDos {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoDos:hover {
+    transform: scale(2);
+  }
+
+  .fotoTres {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoTres:hover {
+    transform: scale(2);
+  }
+
+  .fotoCuatro {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoCuatro:hover {
+    transform: scale(2);
+  }
+
+  .fotoCinco {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoCinco:hover {
+    transform: scale(2);
+  }
+
+  .fotoSeis {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoSeis:hover {
+    transform: scale(2);
+  }
+
+  .fotoSiete {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoSiete:hover {
+    transform: scale(2);
+  }
+
+  .fotoOcho {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoOcho:hover {
+    transform: scale(2);
+  }
+
+  .fotoNueve {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoNueve:hover {
+    transform: scale(2);
+  }
+
+  .fotoDiez {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoDiez:hover {
+    transform: scale(2);
+  }
+
+  .fotoOnce {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoOnce:hover {
+    transform: scale(2);
+  }
+
+  .fotoDoce {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoDoce:hover {
+    transform: scale(2);
+  }
+
+  .fotoA {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoA:hover {
+    transform: scale(2);
+  }
+
+  .fotoB {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoB:hover {
+    transform: scale(2);
+  }
+
+  .fotoC {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoC:hover {
+    transform: scale(2);
+  }
+
+  .fotoD {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoD:hover {
+    transform: scale(2);
+  }
+
+  .fotoE {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoE:hover {
+    transform: scale(2);
+  }
+
+  .fotoF {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoF:hover {
+    transform: scale(2);
+  }
+
+  .fotoG {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoG:hover {
+    transform: scale(2);
+  }
+
+  .fotoH {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoH:hover {
+    transform: scale(2);
+  }
+
+  .fotoI {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoI:hover {
+    transform: scale(2);
+  }
+
+  .fotoJ {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoJ:hover {
+    transform: scale(2);
+  }
+
+  .fotoK {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoK:hover {
+    transform: scale(2);
+  }
+
+  .fotoL {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoL:hover {
+    transform: scale(2);
+  }
+
+  .fotoM {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    border-style: solid;
+    transition: transform 0.3s ease-in-out;
+  }
+  .fotoM:hover {
+    transform: scale(2);
+  }
+
+  /********************* FIN SECTOR GALERIA******************************/
+  /***********************SECTOR NOSOTROS********************************/
+  #apartado1 {
+    text-shadow: 10px 10px 5px gray;
+  }
+
+  .dispNos {
+    font-size: 70%;
+    font: arial;
+    padding-left: 30%;
+  }
+
+  /***********************FIN SECTOR NOSOTROS*****************************/
+  /***************************SECTOR CONTACTO*****************************/
+  .sectionContacto {
+    background-image: url("portada13.jpg");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-family: monospace;
+  }
+
+  .h2Contacto {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+
+  textarea {
+    min-height: 100px;
+    max-height: 200px;
+  }
+
+  #boton {
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+  }
+
+  #boton:hover {
+    cursor: pointer;
+  }
+
+  /***************************FIN SECTOR CONTACTO*************************/
+  /******************************SECTOR FOOTER****************************/
+  .footer-basic {
+    padding: 40px 0;
+    background-color: #000000;
+    background-image: linear-gradient(88deg, #000000 0%, #1d1b1b 50%, #ff0000 100%);
+    color: #4b4c4d;
+  }
+
+  .footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  .footer-basic li {
+    padding: 0 10px;
+  }
+
+  .footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  .footer-basic ul a:hover {
+    opacity: 1;
+  }
+
+  .footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .footer-basic .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+  }
+
+  .footer-basic .social > a:hover {
+    opacity: 0.9;
+  }
+
+  .footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+  /******************************FIN SECTOR FOOTER************************/
+}
 /************************** @MEDIA TABLET**************************/
 @media (min-width: 481px) and (max-width: 1023px) {
   @font-face {
@@ -694,11 +1382,6 @@ textarea {
 
   /******************************FIN SECTOR FOOTER************************/
 }
-@media (min-width: 481px) and (max-width: 1023px) and (max-width: 480px) {
-  form {
-    width: 100%;
-  }
-}
 /************************** @MEDIA DESkTOP**************************/
 @media (min-width: 1024px) {
   @font-face {
@@ -830,7 +1513,7 @@ textarea {
   }
 
   /**************************FIN SECTOR HOME*****************************/
-  /* ************************SECTOR GALERIA.HTML*************************/
+  /*************************SECTOR GALERIA.HTML*************************/
   .sectionGaleria {
     display: flex;
     justify-content: center;
@@ -1389,11 +2072,6 @@ textarea {
   }
 
   /******************************FIN SECTOR FOOTER************************/
-}
-@media (min-width: 1024px) and (max-width: 480px) {
-  form {
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
