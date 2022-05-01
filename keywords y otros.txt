@@ -1,0 +1,25 @@
+ 
+SE AGREGO EN SECTOR INDEX.HTML ESTE CONTENIDO:
+<meta name="keywords"content="vestidos, alta costura, novias, 15 años, confeccion"/>
+<title>Home Dreams Alta Costura</title>
+<meta name="description"content="Vestidos Novias y 15 Años que se adaptan a todos los estilos. Confeccion y Diseños a medida, un vestido un deseo..."/>
+
+SE AGREGO EN SECTOR NOSOTROS.HTML EL CONTENIDO:
+<meta name="keywords"content="vestidos, alta costura, novias, 15 años, confeccion"/>
+<title>Nosotros Dreams Alta Costura</title>
+<meta name="description"content="Vestidos Novias y 15 Años que se adaptan a todos los estilos. Confeccion y Diseños a medida, un vestido un deseo..."/>
+
+SE AGREGO EN SECTOR GALERIA.HTML EL CONTENIDO:
+<meta name="keywords"content="vestidos, alta costura, novias, 15 años, confeccion"/>
+<title>Galeria Dreams Alta Costura</title>
+<meta name="description"content="Vestidos Novias y 15 Años que se adaptan a todos los estilos. Confeccion y Diseños a medida, un vestido un deseo..."/>
+
+SE AGREGO EN SECTOR CONTACTO.HTML EL CONTENIDO:
+<meta name="keywords"content="vestidos, alta costura, novias, 15 años, confeccion"/>
+<title>Contacto Dreams Alta Costura</title>
+<meta name="description"content="Vestidos Novias y 15 Años que se adaptan a todos los estilos. Confeccion y Diseños a medida, un vestido un deseo..."/>
+
+SE AGREGO SECTOR SMARTPHONE Y SECTOR TABLET CON SASS.
+
+
+ 
