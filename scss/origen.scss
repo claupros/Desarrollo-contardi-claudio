@@ -61,7 +61,7 @@ h5 {
 }
 
 .fotoUno {
-  @include fotosquinceaños(50px);
+  @include fotosquinceaños;
 }
 
 .fotoDos {
@@ -247,7 +247,7 @@ h5 {
   }
 
   .fotoUno {
-    @include fotosquinceaños(50px);
+    @include fotosquinceaños;
   }
 
   .fotoDos {
@@ -430,7 +430,7 @@ h5 {
   }
 
   .fotoUno {
-    @include fotosquinceaños(50px);
+    @include fotosquinceaños;
   }
 
   .fotoDos {

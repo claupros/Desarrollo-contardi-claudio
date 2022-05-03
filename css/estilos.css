@@ -206,7 +206,7 @@ nav li {
   width: 150px;
   height: 250px;
   border-color: white;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 10px 5px black;
   border-style: solid;
   transition: transform 0.3s ease-in-out;
@@ -898,7 +898,7 @@ h5 {
     width: 200px;
     height: 300px;
     border-color: white;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 10px 5px black;
     border-style: solid;
     transition: transform 0.3s ease-in-out;
@@ -1583,7 +1583,7 @@ h5 {
     width: 250px;
     height: 350px;
     border-color: white;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 10px 5px black;
     border-style: solid;
     transition: transform 0.3s ease-in-out;
